@@ -1,20 +1,16 @@
 using UnityEngine;
 
-public class HelloPractice : MonoBehaviour
+public class HelloUnity : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // 방법1
-        //Debug.Log("Hello, Game");
-        //Debug.Log("123456789");
-
-        Debug.Log("Hello, Game\n123456789");
+        Debug.Log("Start 함수 호출");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Update 함수 호출");
     }
 }
