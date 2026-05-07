@@ -14,7 +14,9 @@ public class ArrayPractice : MonoBehaviour
         numbers = new int[3];
 
         // 배열 초기화, 값 출력 
-        for(int i = 0; i < 3; i++)
+        // Length를 사용해 i = 0 // i = (numbders.Length - 1)
+
+        for(int i = 0; i < numbers.Length; i++)
         {
             numbers[i] = i + 1;
             Debug.Log(numbers[i]);
