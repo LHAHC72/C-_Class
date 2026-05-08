@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Array(배열) : 하나의 이름으로 같은 데이터 형식을 여러개 보관해 놓는 그릇
+// Array(배열) : 하나의 이름으로 같은 데이터 형식을 여러개 보관해 놓는 그릇, 복수(같은 데이터 형식)
 // 선언: 데이터 타입[] 변수 이름
 
 public class ArrayDemo : MonoBehaviour

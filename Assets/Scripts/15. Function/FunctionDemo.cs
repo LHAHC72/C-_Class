@@ -16,6 +16,8 @@ public class FunctionDemo : MonoBehaviour
 
     // [1-3] 반환값(return)이 있는 함수 만들기(매개변수 없는)
     // 문자열을 반환하는 함수
+    // 반환값과 같은 데이터 타입의 변수로 반환값 저장
+    // 반환값을 받아줄 변수 선언해 값을 받아옴
     string GetString()
     {
         // return 키워드로 (데이터 타입에 맞게) 반환

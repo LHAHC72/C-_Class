@@ -13,10 +13,11 @@ public class FunctionPractice : MonoBehaviour
     void Start()
     {
         Debug.Log($"더하기:{Add(a,b)}");
-        Debug.Log($"빼기:{Sub(a, b)}");
+        // Debug.Log($"빼기:{Sub(a, b)}");
+        Debug.Log($"빼기:{Substract(a, b)}");
         Debug.Log($"곱하기:{Mul(a, b)}");
         Debug.Log($"나누기:{Div(a, b)}");
-        Debug.Log($"나머지:{remain(a, b)}");
+        Debug.Log($"나머지:{Remain(a, b)}");
 
     }
 
@@ -30,6 +31,10 @@ public class FunctionPractice : MonoBehaviour
         return a - b;
     }
 
+    // 화살표 함수
+    int Substract(int a, int b) => a - b;
+
+
     int Mul(int a, int b)
     {
         return a * b;
@@ -37,11 +42,22 @@ public class FunctionPractice : MonoBehaviour
 
     int Div(int a, int b)
     {
+        // 0으로 나눌 때를 대비한 방어코드
+        if(b == 0)
+        {
+            return 0;
+        }
+
         return a / b;
     }
 
-    int remain(int a, int b)
+    int Remain(int a, int b)
     {
+        // 0으로 나눌 때를 대비한 방어코드
+        if (b == 0)
+        {
+            return 0;
+        }
         return a % b;
     }
 
