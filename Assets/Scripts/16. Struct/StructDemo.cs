@@ -36,6 +36,7 @@ public class StructDemo : MonoBehaviour
         BusinessCard[] cards = new BusinessCard[2];
 
         //[6] 구조체에 속해있는 변수들의 초기화
+        // 구조체변수이름[인덱스].변수이름
         cards[0].name = "백두산";
         cards[0].age = 25;
         cards[0].address = "인천시";
